@@ -11,8 +11,8 @@ function App() {
 							<ul>
 								<li><a href='#main' className='f4'>About</a></li>
 								<li><a href='#skill' className='f4'>Skill</a></li>
+								<li><a href='#portWeb' className='f4'>Portfolio-Web</a></li>
 								<li><a href='#' className='f4'>Portfolio-Skill</a></li>
-								<li><a href='#' className='f4'>Portfolio-Web</a></li>
 							</ul>
 						</div>
 					</nav>
@@ -90,6 +90,14 @@ function App() {
 								UI/UX 측면에서 미적인 디자인 뿐만 아니라 모바일 사용자 경험에 최적화를 위해 효율적인 컨텐츠 배치를 우선적으로 생각합니다.
 							</p>
 						</div>
+					</div>
+				</div>
+			</section>
+			<section id='portWeb'>
+				<div className='inner'>
+				<div className='section_title'>
+						<p className='f1'>Portfolio - Web</p>
+						<span className='title_underLine'></span>
 					</div>
 				</div>
 			</section>
