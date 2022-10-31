@@ -95,12 +95,22 @@ function App() {
 			</section>
 			<section id='portWeb'>
 				<div className='inner'>
-				<div className='section_title'>
+					<div className='section_title'>
 						<p className='f1'>Portfolio - Web</p>
 						<span className='title_underLine'></span>
 					</div>
+					<div className='contents'>
+						ss
+					</div>
 				</div>
 			</section>
+
+			<footer>
+				<div className='footer_inner'>
+					<p className='f2'>KIM MUCHEOL</p>
+					<p className='p1'>E-mail : ancjf0601@gmail.com</p>
+				</div>
+			</footer>
     </div>
   );
 }
