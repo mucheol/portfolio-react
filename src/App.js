@@ -42,7 +42,6 @@ function App() {
 				<div className='inner'>
 					<div className='section_title'>
 						<p className='f1'>Skill</p>
-						<span className='title_underLine'></span>
 					</div>
 					<div className='contents'>
 						<div className='item'>
@@ -97,7 +96,6 @@ function App() {
 				<div className='inner'>
 					<div className='section_title'>
 						<p className='f1'>Portfolio - Web</p>
-						<span className='title_underLine'></span>
 					</div>
 					<div className='contents'>
 						ss
