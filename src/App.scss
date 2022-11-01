@@ -300,18 +300,37 @@ header {
 	}
 }
 #skill {
+  background-color: #F0F3F9;
 	.inner {
+    padding-bottom: 73px;
 		.contents {
 			display: flex;
 			flex-wrap: wrap;
-			gap: 117px 121px;
-			margin-top: 157px;
-			margin-left: 103px;
+      justify-content: center;
+			gap: 32px 28px;
+			margin:0 auto;
+			margin-top: 81px;
 			.item {
-				width: 285px;
+        position: relative;
+				width: 348px;
+        height: 350px;
+        background-color: #fff;
+        padding: 75px 32px 42px;
+        border-radius: 23px;
 				.explanation {
-					margin-top: 18px;
+          font-size: 16px;
+          line-height: 22px;
+					margin-top: 27px;
 				}
+        .hole {
+          position: absolute;
+          top: 25px;
+          right: 25px;
+          display: block;
+          width: 20px;
+          height: 20px;
+          background-image: url('./asset/img/holeImg.png');
+        }
 			}
 		}
 	}
