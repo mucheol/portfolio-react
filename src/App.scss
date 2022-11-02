@@ -160,7 +160,21 @@ section {
 .section_title {
 	p {
 		margin-left: 32px;
+    text-transform: uppercase;
 	}
+}
+.flexBox {
+  display: flex;
+  align-items: center;
+}
+.hole {
+  display: block;
+  width: 7px;
+  height: 7px;
+  background-image: url('./asset/img/holeImg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* HEADER */
@@ -317,6 +331,7 @@ header {
         background-color: #fff;
         padding: 75px 32px 42px;
         border-radius: 23px;
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
 				.explanation {
           font-size: 16px;
           line-height: 22px;
@@ -337,11 +352,19 @@ header {
 }
 #portWeb {
 	.inner {
-		.section_title  {
-			.title_underLine {
-				width: 270px; 
-			}
-		}
+		#carousel {
+      .slick-dots li {
+        width: 182px;
+        height: 130px;
+        a img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .mockupScreen {
+        width: ;
+      }
+    }
 		
 	}
 }
