@@ -7,18 +7,13 @@ import "slick-carousel/slick/slick-theme.css";
 function App() {
   let baseUrl = "./img/mockup"
   const settings = {
-    customPaging: function(i) {
-      return (
-        <a>
-          <img src={`${baseUrl}_0${i + 1}.png`} className="mockupScreen"/>
-        </a>
-      );
-    },
-    dots: true,
-    dotsClass: "slick-dots slick-thumb",
+    arrows: true,
+    // dotsClass: "slick-dots slick-thumb",
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    focusOnSelect : true,
+    centerMode : true,
+    slidesToShow: 5,
     slidesToScroll: 1
   };
   return (
@@ -126,7 +121,7 @@ function App() {
 					<div className='contents flexBox'>
 						<div className='imgBox'>
               <div className='img_inner'>
-                <img src="./img/mockup_leopatra.png" />
+              
               </div>
             </div>
 						<div className='textBox'>
@@ -152,28 +147,29 @@ function App() {
           <div id='carousel'>
             <Slider {...settings}>
               <div className='mockup'>
-                <img src={baseUrl + "_01.png"} />
+                <img src={baseUrl + "_001.png"} className="mockupScreen"/>
               </div>
               <div className='mockup'>
-                <img src={baseUrl + "_02.png"} />
+                <img src={baseUrl + "_002.png"} className="mockupScreen"/>
               </div>
               <div className='mockup'>
-                <img src={baseUrl + "_03.png"} />
+                <img src={baseUrl + "_003.png"} className="mockupScreen"/>
               </div>
               <div className='mockup'>
-                <img src={baseUrl + "_04.png"} />
+                <img src={baseUrl + "_004.png"} className="mockupScreen"/>
               </div>
               <div className='mockup'>
-                <img src={baseUrl + "_05.png"} />
+                <img src={baseUrl + "_005.png"} className="mockupScreen"/>
               </div>
               <div className='mockup'>
-                <img src={baseUrl + "_06.png"} />
+                <img src={baseUrl + "_006.png"} className="mockupScreen"/>
               </div>
               <div className='mockup'>
-                <img src={baseUrl + "_07.png"} />
+                <img src={baseUrl + "_007.png"} className="mockupScreen"/>
               </div>
             </Slider>
           </div>
+            
 				</div>
 			</section>
 
