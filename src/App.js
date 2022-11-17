@@ -15,13 +15,6 @@ const skillList = {
   4: <ETC />,
 };
 
-const chgImg = ()=> {
-  let changeImg = $('.slick-current .mockup img').attr('src');
-  let changeImg02 = changeImg.replace('00','0');
-
-  $('#imgScreen').attr('src',changeImg02);
-}
-
 let baseUrl = "./img/mockup"
 
 const settings = {
@@ -44,10 +37,18 @@ const settings = {
       super();
       this.state = {
         skill: 0,
+        nav1: null,
+        nav2: null
       };
     }
     changeSkill = (skillIndex) => {
       this.setState({skill : skillIndex})
+    }
+    componentDidMount() {
+      this.setState({
+        nav1: this.slider1,
+        nav2: this.slider2
+      });
     }
     
     render(){
@@ -156,29 +157,205 @@ const settings = {
             </div>
             <div className='contents flexBox'>
               <div className='imgBox'>
-                <img src="" id='imgScreen' />
-              </div>
-              <div className='textBox'>
-                <div className='projectTitle'>
-                  <div className='logo'></div>
-                  <p className='title'>THINKBLOCK</p>
-                </div>
-                <span className="horLine"></span>
-                <p className='p1'>프로젝트 개요</p>
-                <p className='p2'>VAEX에서 주최한 Dubai NFT Festival 공식 홈페이지.행사 내용과 참가자, 참가방법 등이 상세히 적혀있다.</p>
-                <p className='p1'>작업기간</p>
-                <p className='p2'>2022.02.22 ~ 2033.03.33</p>
-                <p className='p1'>작업 참여도</p>
-                <p className='p2'>퍼블리싱 100%</p>
-                <p className='p1'>제작방식</p>
-                <p className='p2'>Publishing : HTML + CSS + Javascript</p>
-                <div className='btnBox'>
-                  <button>Website</button>
-                  <button>Github</button>
-                </div>
+                <Slider asNavFor={this.state.nav2} ref={slider => (this.slider1 = slider)}>
+                  <div className='mockup'>
+                    <img src={baseUrl + "_01.png"} className="mockupScreen"/>
+                    <div className='textBox'>
+                      <div className='projectTitle'>
+                        <div className='logo'></div>
+                        <p className='title'>Leopatra</p>
+                      </div>
+                      <span className="horLine"></span>
+                      <p className='p1'>프로젝트 개요</p>
+                      <p className='p2'></p>
+                      <p className='p1'>작업기간</p>
+                      <p className='p2'>2022.08 ~ 2022.09</p>
+                      <p className='p1'>작업 참여도</p>
+                      <p className='p2'>퍼블리싱 100%</p>
+                      <p className='p1'>제작방식</p>
+                      <p className='p2'>Publishing : HTML + CSS + Javascript<br/>
+                                        Size : 1920 * 1080</p>
+                      <div className='btnBox'>
+                        <button><a href="https://leopatrademo.netlify.app/" target="_blank" rel="noopener noreferrer">Website</a></button>
+                        <button><a href="https://github.com/mucheol/leopatra" target="_blank" rel="noopener noreferrer">Github</a></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='mockup'>
+                    <img src={baseUrl + "_02.png"} className="mockupScreen"/>
+                    <div className='textBox'>
+                      <div className='projectTitle'>
+                        <div className='logo'></div>
+                        <p className='title'>Dubai NFT Festival</p>
+                      </div>
+                      <span className="horLine"></span>
+                      <p className='p1'>프로젝트 개요</p>
+                      <p className='p2'>VAEX에서 주최한 Dubai NFT Festival 공식 홈페이지.행사 내용과 참가자, 참가방법 등이 상세히 적혀있다.</p>
+                      <p className='p1'>작업기간</p>
+                      <p className='p2'>2022.02.22 ~ 2033.03.33</p>
+                      <p className='p1'>작업 참여도</p>
+                      <p className='p2'>퍼블리싱 100%</p>
+                      <p className='p1'>제작방식</p>
+                      <p className='p2'>Publishing : HTML + CSS + Javascript<br/>
+                                        Size : 1920 * 1080</p>
+                      <div className='btnBox'>
+                        <button><a href="https://dnf.netlify.app" target="_blank" rel="noopener noreferrer">Website</a></button>
+                        <button><a href="https://github.com/mucheol/Dubai_NFT_Festival.git" target="_blank" rel="noopener noreferrer">Github</a></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='mockup'>
+                    <img src={baseUrl + "_03.png"} className="mockupScreen"/>
+                    <div className='textBox'>
+                      <div className='projectTitle'>
+                        <div className='logo'></div>
+                        <p className='title'>PIVN</p>
+                      </div>
+                      <span className="horLine"></span>
+                      <p className='p1'>프로젝트 개요</p>
+                      <p className='p2'>VAEX에서 주최한 Dubai NFT Festival 공식 홈페이지.행사 내용과 참가자, 참가방법 등이 상세히 적혀있다.</p>
+                      <p className='p1'>작업기간</p>
+                      <p className='p2'>2022.02.22 ~ 2033.03.33</p>
+                      <p className='p1'>작업 참여도</p>
+                      <p className='p2'>퍼블리싱 100%</p>
+                      <p className='p1'>제작방식</p>
+                      <p className='p2'>Publishing : HTML + CSS + Javascript<br/>
+                                        Size : 1920 * 1080</p>
+                      <div className='btnBox'>
+                        <button><a href="https://pivn.netlify.app" target="_blank" rel="noopener noreferrer">Website</a></button>
+                        <button><a href="https://github.com/mucheol/PIVN.git" target="_blank" rel="noopener noreferrer">Github</a></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='mockup'>
+                    <img src={baseUrl + "_04.png"} className="mockupScreen"/>
+                    <div className='textBox'>
+                      <div className='projectTitle'>
+                        <div className='logo'></div>
+                        <p className='title'>Home Number Meta</p>
+                      </div>
+                      <span className="horLine"></span>
+                      <p className='p1'>프로젝트 개요</p>
+                      <p className='p2'>VAEX에서 주최한 Dubai NFT Festival 공식 홈페이지.행사 내용과 참가자, 참가방법 등이 상세히 적혀있다.</p>
+                      <p className='p1'>작업기간</p>
+                      <p className='p2'>2022.02.22 ~ 2033.03.33</p>
+                      <p className='p1'>작업 참여도</p>
+                      <p className='p2'>퍼블리싱 100%</p>
+                      <p className='p1'>제작방식</p>
+                      <p className='p2'>Publishing : HTML + CSS + Javascript<br/>
+                                        Size : 1920 * 1080</p>
+                      <div className='btnBox'>
+                        <button><a href="https://hommeta.netlify.app" target="_blank" rel="noopener noreferrer">Website</a></button>
+                        <button><a href="https://github.com/mucheol/homeMeta-user.git" target="_blank" rel="noopener noreferrer">Github</a></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='mockup'>
+                    <img src={baseUrl + "_05.png"} className="mockupScreen"/>
+                    <div className='textBox'>
+                      <div className='projectTitle'>
+                        <div className='logo'></div>
+                        <p className='title'>VAEX Manual</p>
+                      </div>
+                      <span className="horLine"></span>
+                      <p className='p1'>프로젝트 개요</p>
+                      <p className='p2'>VAEX에서 주최한 Dubai NFT Festival 공식 홈페이지.행사 내용과 참가자, 참가방법 등이 상세히 적혀있다.</p>
+                      <p className='p1'>작업기간</p>
+                      <p className='p2'>2022.02.22 ~ 2033.03.33</p>
+                      <p className='p1'>작업 참여도</p>
+                      <p className='p2'>퍼블리싱 100%</p>
+                      <p className='p1'>제작방식</p>
+                      <p className='p2'>Publishing : HTML + CSS + Javascript<br/>
+                                        Size : 1920 * 1080</p>
+                      <div className='btnBox'>
+                        <button><a href="https://vaexmanual.netlify.app" target="_blank" rel="noopener noreferrer">Website</a></button>
+                        <button><a href="https://github.com/mucheol/manualPage.git" target="_blank" rel="noopener noreferrer">Github</a></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='mockup'>
+                    <img src={baseUrl + "_06.png"} className="mockupScreen"/>
+                    <div className='textBox'>
+                      <div className='projectTitle'>
+                        <div className='logo'></div>
+                        <p className='title'>VAEX</p>
+                      </div>
+                      <span className="horLine"></span>
+                      <p className='p1'>프로젝트 개요</p>
+                      <p className='p2'>VAEX에서 주최한 Dubai NFT Festival 공식 홈페이지.행사 내용과 참가자, 참가방법 등이 상세히 적혀있다.</p>
+                      <p className='p1'>작업기간</p>
+                      <p className='p2'>2022.02.22 ~ 2033.03.33</p>
+                      <p className='p1'>작업 참여도</p>
+                      <p className='p2'>퍼블리싱 100%</p>
+                      <p className='p1'>제작방식</p>
+                      <p className='p2'>Publishing : HTML + CSS + Javascript<br/>
+                                        Size : 1920 * 1080</p>
+                      <div className='btnBox'>
+                        <button><a href="https://vaex.netlify.app" target="_blank" rel="noopener noreferrer">Website</a></button>
+                        <button><a href="https://github.com/mucheol/vaex.git" target="_blank" rel="noopener noreferrer">Github</a></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='mockup'>
+                    <img src={baseUrl + "_07.png"} className="mockupScreen"/>
+                    <div className='textBox'>
+                      <div className='projectTitle'>
+                        <div className='logo'></div>
+                        <p className='title'>THINKBLOCK</p>
+                      </div>
+                      <span className="horLine"></span>
+                      <p className='p1'>프로젝트 개요</p>
+                      <p className='p2'>VAEX에서 주최한 Dubai NFT Festival 공식 홈페이지.행사 내용과 참가자, 참가방법 등이 상세히 적혀있다.</p>
+                      <p className='p1'>작업기간</p>
+                      <p className='p2'>2022.02.22 ~ 2033.03.33</p>
+                      <p className='p1'>작업 참여도</p>
+                      <p className='p2'>퍼블리싱 100%</p>
+                      <p className='p1'>제작방식</p>
+                      <p className='p2'>Publishing : HTML + CSS + Javascript<br/>
+                                        Size : 1920 * 1080</p>
+                      <div className='btnBox'>
+                        <button><a href="https://thinkblock.netlify.app" target="_blank" rel="noopener noreferrer">Website</a></button>
+                        <button><a href="https://github.com/mucheol/Think-Block.git" target="_blank" rel="noopener noreferrer">Github</a></button>
+                      </div>
+                    </div>
+                  </div>
+                </Slider>
               </div>
             </div>
-            <div id='carousel'>
+            
+            <div id="carousel">
+        
+        <Slider
+          asNavFor={this.state.nav1}
+          ref={slider => (this.slider2 = slider)}
+          slidesToShow={5}
+          swipeToSlide={true}
+          focusOnSelect={true}
+          {...settings}>
+          <div className='mockup'>
+            <img src={baseUrl + "_001.png"} className="mockupScreen"/>
+          </div>
+          <div className='mockup'>
+            <img src={baseUrl + "_002.png"} className="mockupScreen"/>
+          </div>
+          <div className='mockup'>
+            <img src={baseUrl + "_003.png"} className="mockupScreen"/>
+          </div>
+          <div className='mockup'>
+            <img src={baseUrl + "_004.png"} className="mockupScreen"/>
+          </div>
+          <div className='mockup'>
+            <img src={baseUrl + "_005.png"} className="mockupScreen"/>
+          </div>
+          <div className='mockup'>
+            <img src={baseUrl + "_006.png"} className="mockupScreen"/>
+          </div>
+          <div className='mockup'>
+            <img src={baseUrl + "_007.png"} className="mockupScreen"/>
+          </div>
+        </Slider>
+      </div>
+            {/* <div id='carousel'>
               <Slider {...settings}>
                 <div className='mockup'>
                   <img src={baseUrl + "_001.png"} className="mockupScreen" onClick={chgImg}/>
@@ -202,7 +379,7 @@ const settings = {
                   <img src={baseUrl + "_007.png"} className="mockupScreen" onClick={chgImg}/>
                 </div>
               </Slider>
-            </div>
+            </div> */}
           </div>
         </section>
         <section id='portSkill'>
