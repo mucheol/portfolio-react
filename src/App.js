@@ -167,14 +167,14 @@ const settings = {
                       </div>
                       <span className="horLine"></span>
                       <p className='p1'>프로젝트 개요</p>
-                      <p className='p2'></p>
+                      <p className='p2'>Morrobogi의 NFT 판매 홈페이지. 로그인, 상세페이지, 모달창 등 인터넷 쇼핑몰과 같은 양식으로 퍼블리싱 되었습니다.</p>
                       <p className='p1'>작업기간</p>
-                      <p className='p2'>2022.08 ~ 2022.09</p>
+                      <p className='p2'>2022.08 ~ 2022.09 + 추가개발</p>
                       <p className='p1'>작업 참여도</p>
                       <p className='p2'>퍼블리싱 100%</p>
                       <p className='p1'>제작방식</p>
                       <p className='p2'>Publishing : HTML + CSS + Javascript<br/>
-                                        Size : 1920 * 1080</p>
+                                        Size : Desktop</p>
                       <div className='btnBox'>
                         <button><a href="https://leopatrademo.netlify.app/" target="_blank" rel="noopener noreferrer">Website</a></button>
                         <button><a href="https://github.com/mucheol/leopatra" target="_blank" rel="noopener noreferrer">Github</a></button>
@@ -190,14 +190,14 @@ const settings = {
                       </div>
                       <span className="horLine"></span>
                       <p className='p1'>프로젝트 개요</p>
-                      <p className='p2'>VAEX에서 주최한 Dubai NFT Festival 공식 홈페이지.행사 내용과 참가자, 참가방법 등이 상세히 적혀있다.</p>
+                      <p className='p2'>VAEX에서 주최한 Dubai NFT Festival 공식 홈페이지.행사 내용과 참가자, 참가방법 등이 상세히 적혀있습니다.</p>
                       <p className='p1'>작업기간</p>
-                      <p className='p2'>2022.02.22 ~ 2033.03.33</p>
+                      <p className='p2'>2022.07 ~ 2022.08</p>
                       <p className='p1'>작업 참여도</p>
-                      <p className='p2'>퍼블리싱 100%</p>
+                      <p className='p2'>퍼블리싱 100% + 호스팅</p>
                       <p className='p1'>제작방식</p>
                       <p className='p2'>Publishing : HTML + CSS + Javascript<br/>
-                                        Size : 1920 * 1080</p>
+                                        Size : Desktop / Laptop / Mobile</p>
                       <div className='btnBox'>
                         <button><a href="https://dnf.netlify.app" target="_blank" rel="noopener noreferrer">Website</a></button>
                         <button><a href="https://github.com/mucheol/Dubai_NFT_Festival.git" target="_blank" rel="noopener noreferrer">Github</a></button>
