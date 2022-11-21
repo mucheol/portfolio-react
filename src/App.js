@@ -162,14 +162,14 @@ const settings = {
                     <img src={baseUrl + "_01.png"} className="mockupScreen"/>
                     <div className='textBox'>
                       <div className='projectTitle'>
-                        <div className='logo'></div>
+                        <div className='logo'><img src="./img/logo_leopatra.png"/></div>
                         <p className='title'>Leopatra</p>
                       </div>
                       <span className="horLine"></span>
                       <p className='p1'>프로젝트 개요</p>
-                      <p className='p2'>Morrobogi의 NFT 판매 홈페이지. 로그인, 상세페이지, 모달창 등 인터넷 쇼핑몰과 같은 양식으로 퍼블리싱 되었습니다.</p>
+                      <p className='p2'>Morrobogi의 NFT 판매 홈페이지.<br/> 로그인, 상세페이지, 모달창 등 인터넷 쇼핑몰과 같은 양식으로 퍼블리싱 되었습니다.</p>
                       <p className='p1'>작업기간</p>
-                      <p className='p2'>2022.08 ~ 2022.09 + 추가개발</p>
+                      <p className='p2'>2022.07 ~ 2022.09(5주) + 추가개발</p>
                       <p className='p1'>작업 참여도</p>
                       <p className='p2'>퍼블리싱 100%</p>
                       <p className='p1'>제작방식</p>
@@ -185,16 +185,16 @@ const settings = {
                     <img src={baseUrl + "_02.png"} className="mockupScreen"/>
                     <div className='textBox'>
                       <div className='projectTitle'>
-                        <div className='logo'></div>
+                        <div className='logo'><img src="./img/logo_dnf.png"/></div>
                         <p className='title'>Dubai NFT Festival</p>
                       </div>
                       <span className="horLine"></span>
                       <p className='p1'>프로젝트 개요</p>
-                      <p className='p2'>VAEX에서 주최한 Dubai NFT Festival 공식 홈페이지.행사 내용과 참가자, 참가방법 등이 상세히 적혀있습니다.</p>
+                      <p className='p2'>VAEX에서 주최한 Dubai NFT Festival 공식 홈페이지.<br/>행사 내용, 연사 등 행사정보들과 컨러런스 참가신청서를 포함한 정보를 알리기 위해 개발되었습니다.</p>
                       <p className='p1'>작업기간</p>
-                      <p className='p2'>2022.07 ~ 2022.08</p>
+                      <p className='p2'>2022.07 ~ 2022.08(2주)</p>
                       <p className='p1'>작업 참여도</p>
-                      <p className='p2'>퍼블리싱 100% + 호스팅</p>
+                      <p className='p2'>퍼블리싱 100% + 호스팅 + 구글 스프레드시트 연동</p>
                       <p className='p1'>제작방식</p>
                       <p className='p2'>Publishing : HTML + CSS + Javascript<br/>
                                         Size : Desktop / Laptop / Mobile</p>
@@ -208,19 +208,20 @@ const settings = {
                     <img src={baseUrl + "_03.png"} className="mockupScreen"/>
                     <div className='textBox'>
                       <div className='projectTitle'>
-                        <div className='logo'></div>
+                        <div className='logo'><img src="./img/logo_pivn.png"/></div>
                         <p className='title'>PIVN</p>
                       </div>
                       <span className="horLine"></span>
                       <p className='p1'>프로젝트 개요</p>
-                      <p className='p2'>VAEX에서 주최한 Dubai NFT Festival 공식 홈페이지.행사 내용과 참가자, 참가방법 등이 상세히 적혀있다.</p>
+                      <p className='p2'>PIVN 토큰 공식 홈페이지.<br/>PIVN 토큰의 정보, 로드맵 등 백서에 대한 정보를 홈페이지로 제작</p>
                       <p className='p1'>작업기간</p>
-                      <p className='p2'>2022.02.22 ~ 2033.03.33</p>
+                      <p className='p2'>2022.06 ~ 2022.07 (3주)</p>
                       <p className='p1'>작업 참여도</p>
                       <p className='p2'>퍼블리싱 100%</p>
                       <p className='p1'>제작방식</p>
                       <p className='p2'>Publishing : HTML + CSS + Javascript<br/>
-                                        Size : 1920 * 1080</p>
+                                        Plugin : Particles.js + Fullpage.js<br/>
+                                        Size : Desktop + Laptop + Mobile</p>
                       <div className='btnBox'>
                         <button><a href="https://pivn.netlify.app" target="_blank" rel="noopener noreferrer">Website</a></button>
                         <button><a href="https://github.com/mucheol/PIVN.git" target="_blank" rel="noopener noreferrer">Github</a></button>
@@ -231,19 +232,19 @@ const settings = {
                     <img src={baseUrl + "_04.png"} className="mockupScreen"/>
                     <div className='textBox'>
                       <div className='projectTitle'>
-                        <div className='logo'></div>
+                        <div className='logo'><img src="./img/logo_homeMeta.png"/></div>
                         <p className='title'>Home Number Meta</p>
                       </div>
                       <span className="horLine"></span>
                       <p className='p1'>프로젝트 개요</p>
-                      <p className='p2'>VAEX에서 주최한 Dubai NFT Festival 공식 홈페이지.행사 내용과 참가자, 참가방법 등이 상세히 적혀있다.</p>
+                      <p className='p2'>Home Number Meta의 운송장 시스템 홈페이지.<br/>관리자, 유저 페이지 모두 개발하였으며 정보관리, 택배접수, 회원가입, 로그인페이지 등</p>
                       <p className='p1'>작업기간</p>
-                      <p className='p2'>2022.02.22 ~ 2033.03.33</p>
+                      <p className='p2'>2022.05 ~ 2022.06 (1주)</p>
                       <p className='p1'>작업 참여도</p>
                       <p className='p2'>퍼블리싱 100%</p>
                       <p className='p1'>제작방식</p>
-                      <p className='p2'>Publishing : HTML + CSS + Javascript<br/>
-                                        Size : 1920 * 1080</p>
+                      <p className='p2'>Publishing : HTML + CSS<br/>
+                                        Size : Desktop</p>
                       <div className='btnBox'>
                         <button><a href="https://hommeta.netlify.app" target="_blank" rel="noopener noreferrer">Website</a></button>
                         <button><a href="https://github.com/mucheol/homeMeta-user.git" target="_blank" rel="noopener noreferrer">Github</a></button>
@@ -254,12 +255,12 @@ const settings = {
                     <img src={baseUrl + "_05.png"} className="mockupScreen"/>
                     <div className='textBox'>
                       <div className='projectTitle'>
-                        <div className='logo'></div>
+                        <div className='logo'><img src="./img/logo_vaex.png"/></div>
                         <p className='title'>VAEX Manual</p>
                       </div>
                       <span className="horLine"></span>
                       <p className='p1'>프로젝트 개요</p>
-                      <p className='p2'>VAEX에서 주최한 Dubai NFT Festival 공식 홈페이지.행사 내용과 참가자, 참가방법 등이 상세히 적혀있다.</p>
+                      <p className='p2'>VAEX에서 주최한 Dubai NFT Festival 공식 홈페이지.<br/>행사 내용과 참가자, 참가방법 등이 상세히 적혀있다.</p>
                       <p className='p1'>작업기간</p>
                       <p className='p2'>2022.02.22 ~ 2033.03.33</p>
                       <p className='p1'>작업 참여도</p>
@@ -277,7 +278,7 @@ const settings = {
                     <img src={baseUrl + "_06.png"} className="mockupScreen"/>
                     <div className='textBox'>
                       <div className='projectTitle'>
-                        <div className='logo'></div>
+                        <div className='logo'><img src="./img/logo_vaex.png"/></div>
                         <p className='title'>VAEX</p>
                       </div>
                       <span className="horLine"></span>
@@ -300,7 +301,7 @@ const settings = {
                     <img src={baseUrl + "_07.png"} className="mockupScreen"/>
                     <div className='textBox'>
                       <div className='projectTitle'>
-                        <div className='logo'></div>
+                        <div className='logo'><img src="./img/logo_thinkblock.png"/></div>
                         <p className='title'>THINKBLOCK</p>
                       </div>
                       <span className="horLine"></span>
