@@ -15,7 +15,7 @@ const skillList = {
   4: <ETC />,
 };
 
-let baseUrl = "./test/img/mockup"
+let baseUrl = "./img/mockup"
 
 const settings = {
   arrows: true,
@@ -76,7 +76,7 @@ const settings = {
                 <span className="dropText3">Mucheol</span>
               </div>
               <div className='mainImg'>
-                <img src='./test/img/main_profileImg.png'/>
+                <img src='./img/main_profileImg.png'/>
               </div>
               <p>안녕하세요 프론트엔드 개발자를 꿈꾸는 퍼블리셔 김무철입니다.</p>
             </div>
@@ -159,7 +159,7 @@ const settings = {
                     <img src={baseUrl + "_01.png"} className="mockupScreen"/>
                     <div className='textBox'>
                       <div className='projectTitle'>
-                        <div className='logo'><img src="./test/img/logo_leopatra.png"/></div>
+                        <div className='logo'><img src="./img/logo_leopatra.png"/></div>
                         <p className='title'>Leopatra</p>
                       </div>
                       <span className="horLine"></span>
@@ -182,7 +182,7 @@ const settings = {
                     <img src={baseUrl + "_02.png"} className="mockupScreen"/>
                     <div className='textBox'>
                       <div className='projectTitle'>
-                        <div className='logo'><img src="./test/img/logo_dnf.png"/></div>
+                        <div className='logo'><img src="./img/logo_dnf.png"/></div>
                         <p className='title'>Dubai NFT Festival</p>
                       </div>
                       <span className="horLine"></span>
@@ -252,7 +252,7 @@ const settings = {
                     <img src={baseUrl + "_05.png"} className="mockupScreen"/>
                     <div className='textBox'>
                       <div className='projectTitle'>
-                        <div className='logo'><img src="./test/img/logo_vaex.png"/></div>
+                        <div className='logo'><img src="./img/logo_vaex.png"/></div>
                         <p className='title'>VAEX Manual</p>
                       </div>
                       <span className="horLine"></span>
@@ -275,7 +275,7 @@ const settings = {
                     <img src={baseUrl + "_06.png"} className="mockupScreen"/>
                     <div className='textBox'>
                       <div className='projectTitle'>
-                        <div className='logo'><img src="./test/img/logo_vaex.png"/></div>
+                        <div className='logo'><img src="./img/logo_vaex.png"/></div>
                         <p className='title'>VAEX</p>
                       </div>
                       <span className="horLine"></span>
@@ -299,7 +299,7 @@ const settings = {
                     <img src={baseUrl + "_07.png"} className="mockupScreen"/>
                     <div className='textBox'>
                       <div className='projectTitle'>
-                        <div className='logo'><img src="./test/img/logo_thinkblock.png"/></div>
+                        <div className='logo'><img src="./img/logo_thinkblock.png"/></div>
                         <p className='title'>THINKBLOCK</p>
                       </div>
                       <span className="horLine"></span>
