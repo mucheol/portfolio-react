@@ -1,6 +1,6 @@
 import './App.scss';
 import {useState} from 'react';
-import React, { Component} from 'react';
+import React, {userRef, useEffect, Component} from 'react';
 import { Hover, Effect, Animation, CardUI, ETC } from './asset/html';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -15,7 +15,7 @@ const skillList = {
   4: <ETC />,
 };
 
-let baseUrl = "./img/mockup"
+let baseUrl = "./test/img/mockup"
 
 const settings = {
   arrows: true,
@@ -27,8 +27,6 @@ const settings = {
   slidesToShow: 5,
   slidesToScroll: 1
 };
-
-
 
 // function App() {
   class App extends React.Component{
@@ -51,7 +49,7 @@ const settings = {
       });
     }
     
-    render(){
+    render(){  
     return (
       <div className="App">
         <header>
@@ -63,7 +61,7 @@ const settings = {
                   <li><a href='#main' className='f4'>About</a></li>
                   <li><a href='#skill' className='f4'>Skill</a></li>
                   <li><a href='#portWeb' className='f4'>Portfolio-Web</a></li>
-                  <li><a href='#' className='f4'>Portfolio-Skill</a></li>
+                  {/* <li><a href='#' className='f4'>Portfolio-Skill</a></li> */}
                 </ul>
               </div>
             </nav>
@@ -78,9 +76,9 @@ const settings = {
                 <span className="dropText3">Mucheol</span>
               </div>
               <div className='mainImg'>
-                <img src='./img/main_profileImg.png'/>
+                <img src='./test/img/main_profileImg.png'/>
               </div>
-              <p>안녕하세요 평생개발자를 꿈꾸는 김무철입니다.</p>
+              <p>안녕하세요 프론트엔드 개발자를 꿈꾸는 퍼블리셔 김무철입니다.</p>
             </div>
             <div className='scrollText'>
               <p>Scroll down</p>
@@ -98,9 +96,8 @@ const settings = {
               <div className='item'>
                 <p className='subject f3'>React</p>
                 <p className='explanation'>
-                  웹 표준과 웹 접근성을 준수하는 HTML 정보 구조설계로 웹사이트 퍼블리싱을 해오고 있습니다.
-                  특히 웹 표준을 위해 $$$ $$$$$$$ $$$$$$$$ $$$$$$$$$$$$$$$$ $$$$$$$$$ $$$$$$ $$$$$$ $$$$ $$
-                  웹 UI 디자인 작업 후 클래스 네임과 함께 HTML 정보 구조설계를 꼼꼼히 작업한 후 퍼블리싱 작업을 진행합니다.
+                  아직 학습이 진행중입니다. React강의는 '코딩애플', '코딩 알려주는 누나'사이트에서 학습하고 있으며 기초부터 착실하게 다지고 있습니다. 
+                  기존에 퍼블리싱하였던 사이트들을 React로 다시 개발하며 컴포넌트 쓰는방법, js적용방법, 효율적인 코드재사용 등 기존의 HTML, CSS, JS의 틀에서 벗어난 깔끔하고 조직적인 웹을 개발하기 위해 공부하고 있습니다.
                 </p>
                 <span className='hole'></span>
               </div>
@@ -162,7 +159,7 @@ const settings = {
                     <img src={baseUrl + "_01.png"} className="mockupScreen"/>
                     <div className='textBox'>
                       <div className='projectTitle'>
-                        <div className='logo'><img src="./img/logo_leopatra.png"/></div>
+                        <div className='logo'><img src="./test/img/logo_leopatra.png"/></div>
                         <p className='title'>Leopatra</p>
                       </div>
                       <span className="horLine"></span>
@@ -185,7 +182,7 @@ const settings = {
                     <img src={baseUrl + "_02.png"} className="mockupScreen"/>
                     <div className='textBox'>
                       <div className='projectTitle'>
-                        <div className='logo'><img src="./img/logo_dnf.png"/></div>
+                        <div className='logo'><img src="./test/img/logo_dnf.png"/></div>
                         <p className='title'>Dubai NFT Festival</p>
                       </div>
                       <span className="horLine"></span>
@@ -255,19 +252,19 @@ const settings = {
                     <img src={baseUrl + "_05.png"} className="mockupScreen"/>
                     <div className='textBox'>
                       <div className='projectTitle'>
-                        <div className='logo'><img src="./img/logo_vaex.png"/></div>
+                        <div className='logo'><img src="./test/img/logo_vaex.png"/></div>
                         <p className='title'>VAEX Manual</p>
                       </div>
                       <span className="horLine"></span>
                       <p className='p1'>프로젝트 개요</p>
-                      <p className='p2'>VAEX에서 주최한 Dubai NFT Festival 공식 홈페이지.<br/>행사 내용과 참가자, 참가방법 등이 상세히 적혀있다.</p>
+                      <p className='p2'>VAEX 거래소의 매뉴얼을 정리한 홈페이지.</p>
                       <p className='p1'>작업기간</p>
-                      <p className='p2'>2022.02.22 ~ 2033.03.33</p>
+                      <p className='p2'>2022.04 ~ 2022.05 (웹기획2주 + 퍼블리싱2주)</p>
                       <p className='p1'>작업 참여도</p>
-                      <p className='p2'>퍼블리싱 100%</p>
+                      <p className='p2'>퍼블리싱 100% / 기획 100% + 호스팅</p>
                       <p className='p1'>제작방식</p>
-                      <p className='p2'>Publishing : HTML + CSS + Javascript<br/>
-                                        Size : 1920 * 1080</p>
+                      <p className='p2'>Publishing : HTML + CSS<br/>
+                                        Size : Desktop</p>
                       <div className='btnBox'>
                         <button><a href="https://vaexmanual.netlify.app" target="_blank" rel="noopener noreferrer">Website</a></button>
                         <button><a href="https://github.com/mucheol/manualPage.git" target="_blank" rel="noopener noreferrer">Github</a></button>
@@ -278,19 +275,20 @@ const settings = {
                     <img src={baseUrl + "_06.png"} className="mockupScreen"/>
                     <div className='textBox'>
                       <div className='projectTitle'>
-                        <div className='logo'><img src="./img/logo_vaex.png"/></div>
+                        <div className='logo'><img src="./test/img/logo_vaex.png"/></div>
                         <p className='title'>VAEX</p>
                       </div>
                       <span className="horLine"></span>
                       <p className='p1'>프로젝트 개요</p>
-                      <p className='p2'>VAEX에서 주최한 Dubai NFT Festival 공식 홈페이지.행사 내용과 참가자, 참가방법 등이 상세히 적혀있다.</p>
+                      <p className='p2'>VAEX 회사의 메인 홈페이지.<br/>VAEX 거래소에 대한 설명, 비젼, 로드맵 그리고 메뉴얼 등 일반적인 기업 홈페이지.</p>
                       <p className='p1'>작업기간</p>
-                      <p className='p2'>2022.02.22 ~ 2033.03.33</p>
+                      <p className='p2'>2022.02 ~ 2022.04 (7주)</p>
                       <p className='p1'>작업 참여도</p>
-                      <p className='p2'>퍼블리싱 100%</p>
+                      <p className='p2'>퍼블리싱 100% + 호스팅</p>
                       <p className='p1'>제작방식</p>
                       <p className='p2'>Publishing : HTML + CSS + Javascript<br/>
-                                        Size : 1920 * 1080</p>
+                                        Plugin : Fullpage.js<br/>
+                                        Size : Desktop + Laptop + Mobile</p>
                       <div className='btnBox'>
                         <button><a href="https://vaex.netlify.app" target="_blank" rel="noopener noreferrer">Website</a></button>
                         <button><a href="https://github.com/mucheol/vaex.git" target="_blank" rel="noopener noreferrer">Github</a></button>
@@ -301,19 +299,19 @@ const settings = {
                     <img src={baseUrl + "_07.png"} className="mockupScreen"/>
                     <div className='textBox'>
                       <div className='projectTitle'>
-                        <div className='logo'><img src="./img/logo_thinkblock.png"/></div>
+                        <div className='logo'><img src="./test/img/logo_thinkblock.png"/></div>
                         <p className='title'>THINKBLOCK</p>
                       </div>
                       <span className="horLine"></span>
                       <p className='p1'>프로젝트 개요</p>
-                      <p className='p2'>VAEX에서 주최한 Dubai NFT Festival 공식 홈페이지.행사 내용과 참가자, 참가방법 등이 상세히 적혀있다.</p>
+                      <p className='p2'>THINKBLOCK의 메인 홈페이지.<br/>THINKBLOCK의 코인, 로드맵, 멤버 등 단일페이지 기업 홈페이지.</p>
                       <p className='p1'>작업기간</p>
-                      <p className='p2'>2022.02.22 ~ 2033.03.33</p>
+                      <p className='p2'>2022.01 ~ 2022.02 (2주)</p>
                       <p className='p1'>작업 참여도</p>
-                      <p className='p2'>퍼블리싱 100%</p>
+                      <p className='p2'>퍼블리싱 100% + 호스팅</p>
                       <p className='p1'>제작방식</p>
                       <p className='p2'>Publishing : HTML + CSS + Javascript<br/>
-                                        Size : 1920 * 1080</p>
+                                        Size : Desktop + Laptop + Mobile</p>
                       <div className='btnBox'>
                         <button><a href="https://thinkblock.netlify.app" target="_blank" rel="noopener noreferrer">Website</a></button>
                         <button><a href="https://github.com/mucheol/Think-Block.git" target="_blank" rel="noopener noreferrer">Github</a></button>
@@ -323,67 +321,40 @@ const settings = {
                 </Slider>
               </div>
             </div>
-            
             <div id="carousel">
-        
-        <Slider
-          asNavFor={this.state.nav1}
-          ref={slider => (this.slider2 = slider)}
-          slidesToShow={5}
-          swipeToSlide={true}
-          focusOnSelect={true}
-          {...settings}>
-          <div className='mockup'>
-            <img src={baseUrl + "_001.png"} className="mockupScreen"/>
-          </div>
-          <div className='mockup'>
-            <img src={baseUrl + "_002.png"} className="mockupScreen"/>
-          </div>
-          <div className='mockup'>
-            <img src={baseUrl + "_003.png"} className="mockupScreen"/>
-          </div>
-          <div className='mockup'>
-            <img src={baseUrl + "_004.png"} className="mockupScreen"/>
-          </div>
-          <div className='mockup'>
-            <img src={baseUrl + "_005.png"} className="mockupScreen"/>
-          </div>
-          <div className='mockup'>
-            <img src={baseUrl + "_006.png"} className="mockupScreen"/>
-          </div>
-          <div className='mockup'>
-            <img src={baseUrl + "_007.png"} className="mockupScreen"/>
-          </div>
-        </Slider>
-      </div>
-            {/* <div id='carousel'>
-              <Slider {...settings}>
+              <Slider
+                asNavFor={this.state.nav1}
+                ref={slider => (this.slider2 = slider)}
+                slidesToShow={5}
+                swipeToSlide={true}
+                focusOnSelect={true}
+                {...settings}>
                 <div className='mockup'>
-                  <img src={baseUrl + "_001.png"} className="mockupScreen" onClick={chgImg}/>
+                  <img src={baseUrl + "_001.png"} className="mockupScreen"/>
                 </div>
                 <div className='mockup'>
-                  <img src={baseUrl + "_002.png"} className="mockupScreen" onClick={chgImg}/>
+                  <img src={baseUrl + "_002.png"} className="mockupScreen"/>
                 </div>
                 <div className='mockup'>
-                  <img src={baseUrl + "_003.png"} className="mockupScreen" onClick={chgImg}/>
+                  <img src={baseUrl + "_003.png"} className="mockupScreen"/>
                 </div>
                 <div className='mockup'>
-                  <img src={baseUrl + "_004.png"} className="mockupScreen" onClick={chgImg}/>
+                  <img src={baseUrl + "_004.png"} className="mockupScreen"/>
                 </div>
                 <div className='mockup'>
-                  <img src={baseUrl + "_005.png"} className="mockupScreen" onClick={chgImg}/>
+                  <img src={baseUrl + "_005.png"} className="mockupScreen"/>
                 </div>
                 <div className='mockup'>
-                  <img src={baseUrl + "_006.png"} className="mockupScreen" onClick={chgImg}/>
+                  <img src={baseUrl + "_006.png"} className="mockupScreen"/>
                 </div>
                 <div className='mockup'>
-                  <img src={baseUrl + "_007.png"} className="mockupScreen" onClick={chgImg}/>
+                  <img src={baseUrl + "_007.png"} className="mockupScreen"/>
                 </div>
               </Slider>
-            </div> */}
+            </div>
           </div>
         </section>
-        <section id='portSkill'>
+        {/* <section id='portSkill'>
           <div className='inner'>
             <div className='section_title'>
               <p className='flexBox f1'>Portfolio <span className='hole'></span> Skill</p>
@@ -403,7 +374,7 @@ const settings = {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         <footer>
           <div className='footer_inner'>
             <p className='f2'>KIM MUCHEOL</p>
