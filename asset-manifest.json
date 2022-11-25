@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mucheol/portfolio-react/static/css/main.733e9389.css",
-    "main.js": "/mucheol/portfolio-react/static/js/main.b4895a6b.js",
+    "main.js": "/mucheol/portfolio-react/static/js/main.068a7e38.js",
     "static/js/787.aeca62f9.chunk.js": "/mucheol/portfolio-react/static/js/787.aeca62f9.chunk.js",
     "static/media/main_banner.png": "/mucheol/portfolio-react/static/media/main_banner.b5a5271c94dd92d0930f.png",
     "static/media/slick.svg": "/mucheol/portfolio-react/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -10,11 +10,11 @@
     "static/media/slick.woff": "/mucheol/portfolio-react/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/mucheol/portfolio-react/index.html",
     "main.733e9389.css.map": "/mucheol/portfolio-react/static/css/main.733e9389.css.map",
-    "main.b4895a6b.js.map": "/mucheol/portfolio-react/static/js/main.b4895a6b.js.map",
+    "main.068a7e38.js.map": "/mucheol/portfolio-react/static/js/main.068a7e38.js.map",
     "787.aeca62f9.chunk.js.map": "/mucheol/portfolio-react/static/js/787.aeca62f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.733e9389.css",
-    "static/js/main.b4895a6b.js"
+    "static/js/main.068a7e38.js"
   ]
 }
