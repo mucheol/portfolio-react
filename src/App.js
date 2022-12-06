@@ -77,6 +77,7 @@ const settings = {
               </div>
               <div className='mainImg'>
                 <img src='./img/main_profileImg.png'/>
+                {/* <img src='%PUBLIC_URL%/img/main_profileImg.png'/> */}
               </div>
               <p>안녕하세요 프론트엔드 개발자를 꿈꾸는 퍼블리셔 김무철입니다.</p>
             </div>
@@ -143,6 +144,15 @@ const settings = {
                 </p>
                 <span className='hole'></span>
               </div>
+              <div className='item'>
+                <p className='subject f3'>Experience</p>
+                <p className='explanation'>
+                  <span>Tool</span>&nbsp; :&nbsp; VSCode / Eclipse/ Figma<br/>
+                  <span>Library / Plugin</span>&nbsp; :&nbsp; jQuery / Fullpage.js / Aos.js / Slick.js / Swiper.js / Particles.js / MagicMouse.js / Pdf.js / i18n.js <br/>
+                  <span>etc</span>&nbsp; :&nbsp; Bootstrap / Hosting(Cafe24, Gabia, Dothome, Github) / Font awesome / Google Maps API / Google Spreadsheet 연동
+                </p>
+                <span className='hole'></span>
+              </div>
             </div>
           </div>
         </section>
@@ -173,8 +183,8 @@ const settings = {
                       <p className='p2'>Publishing : HTML + CSS + Javascript<br/>
                                         Size : Desktop</p>
                       <div className='btnBox'>
-                        <button><a href="https://leopatrademo.netlify.app/" target="_blank" rel="noopener noreferrer">Website</a></button>
-                        <button><a href="https://github.com/mucheol/leopatra" target="_blank" rel="noopener noreferrer">Github</a></button>
+                        <a href="https://leopatrademo.netlify.app/" target="_blank" rel="noopener noreferrer"><button>Website</button></a>
+                        <a href="https://github.com/mucheol/leopatra" target="_blank" rel="noopener noreferrer"><button>Github</button></a>
                       </div>
                     </div>
                   </div>
@@ -196,8 +206,8 @@ const settings = {
                       <p className='p2'>Publishing : HTML + CSS + Javascript<br/>
                                         Size : Desktop / Laptop / Mobile</p>
                       <div className='btnBox'>
-                        <button><a href="https://dnf.netlify.app" target="_blank" rel="noopener noreferrer">Website</a></button>
-                        <button><a href="https://github.com/mucheol/Dubai_NFT_Festival.git" target="_blank" rel="noopener noreferrer">Github</a></button>
+                        <a href="https://dnf.netlify.app" target="_blank" rel="noopener noreferrer"><button>Website</button></a>
+                        <a href="https://github.com/mucheol/Dubai_NFT_Festival.git" target="_blank" rel="noopener noreferrer"><button>Github</button></a>
                       </div>
                     </div>
                   </div>
@@ -220,8 +230,8 @@ const settings = {
                                         Plugin : Particles.js + Fullpage.js<br/>
                                         Size : Desktop + Laptop + Mobile</p>
                       <div className='btnBox'>
-                        <button><a href="https://pivn.netlify.app" target="_blank" rel="noopener noreferrer">Website</a></button>
-                        <button><a href="https://github.com/mucheol/PIVN.git" target="_blank" rel="noopener noreferrer">Github</a></button>
+                        <a href="https://pivn.netlify.app" target="_blank" rel="noopener noreferrer"><button>Website</button></a>
+                        <a href="https://github.com/mucheol/PIVN.git" target="_blank" rel="noopener noreferrer"><button>Github</button></a>
                       </div>
                     </div>
                   </div>
@@ -243,8 +253,8 @@ const settings = {
                       <p className='p2'>Publishing : HTML + CSS<br/>
                                         Size : Desktop</p>
                       <div className='btnBox'>
-                        <button><a href="https://hommeta.netlify.app" target="_blank" rel="noopener noreferrer">Website</a></button>
-                        <button><a href="https://github.com/mucheol/homeMeta-user.git" target="_blank" rel="noopener noreferrer">Github</a></button>
+                        <a href="https://hommeta.netlify.app" target="_blank" rel="noopener noreferrer"><button>Website</button></a>
+                        <a href="https://github.com/mucheol/homeMeta-user.git" target="_blank" rel="noopener noreferrer"><button>Github</button></a>
                       </div>
                     </div>
                   </div>
@@ -266,8 +276,8 @@ const settings = {
                       <p className='p2'>Publishing : HTML + CSS<br/>
                                         Size : Desktop</p>
                       <div className='btnBox'>
-                        <button><a href="https://vaexmanual.netlify.app" target="_blank" rel="noopener noreferrer">Website</a></button>
-                        <button><a href="https://github.com/mucheol/manualPage.git" target="_blank" rel="noopener noreferrer">Github</a></button>
+                        <a href="https://vaexmanual.netlify.app" target="_blank" rel="noopener noreferrer"><button>Website</button></a>
+                        <a href="https://github.com/mucheol/manualPage.git" target="_blank" rel="noopener noreferrer"><button>Github</button></a>
                       </div>
                     </div>
                   </div>
@@ -290,8 +300,8 @@ const settings = {
                                         Plugin : Fullpage.js<br/>
                                         Size : Desktop + Laptop + Mobile</p>
                       <div className='btnBox'>
-                        <button><a href="https://vaex.netlify.app" target="_blank" rel="noopener noreferrer">Website</a></button>
-                        <button><a href="https://github.com/mucheol/vaex.git" target="_blank" rel="noopener noreferrer">Github</a></button>
+                        <a href="https://vaex.netlify.app" target="_blank" rel="noopener noreferrer"><button>Website</button></a>
+                        <a href="https://github.com/mucheol/vaex.git" target="_blank" rel="noopener noreferrer"><button>Github</button></a>
                       </div>
                     </div>
                   </div>
@@ -313,8 +323,8 @@ const settings = {
                       <p className='p2'>Publishing : HTML + CSS + Javascript<br/>
                                         Size : Desktop + Laptop + Mobile</p>
                       <div className='btnBox'>
-                        <button><a href="https://thinkblock.netlify.app" target="_blank" rel="noopener noreferrer">Website</a></button>
-                        <button><a href="https://github.com/mucheol/Think-Block.git" target="_blank" rel="noopener noreferrer">Github</a></button>
+                        <a href="https://thinkblock.netlify.app" target="_blank" rel="noopener noreferrer"><button>Website</button></a>
+                        <a href="https://github.com/mucheol/Think-Block.git" target="_blank" rel="noopener noreferrer"><button>Github</button></a>
                       </div>
                     </div>
                   </div>
