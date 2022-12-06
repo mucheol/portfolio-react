@@ -147,7 +147,7 @@ const settings = {
               <div className='item'>
                 <p className='subject f3'>Experience</p>
                 <p className='explanation'>
-                  <span>Tool</span>&nbsp; :&nbsp; VSCode / Eclipse/ Figma<br/>
+                  <span>Tool</span>&nbsp; :&nbsp; VSCode / Eclipse / Github / Figma<br/>
                   <span>Library / Plugin</span>&nbsp; :&nbsp; jQuery / Fullpage.js / Aos.js / Slick.js / Swiper.js / Particles.js / MagicMouse.js / Pdf.js / i18n.js <br/>
                   <span>etc</span>&nbsp; :&nbsp; Bootstrap / Hosting(Cafe24, Gabia, Dothome, Github) / Font awesome / Google Maps API / Google Spreadsheet 연동
                 </p>
