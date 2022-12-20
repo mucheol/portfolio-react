@@ -630,9 +630,10 @@ header {
         ul {
           li {
             width: auto;
+            margin: 0 10px;
           }
           li:nth-child(1) {
-            margin-right: 20px;
+            margin-right: 10px;
           }
           li:nth-child(3) {
             width: auto;
@@ -644,6 +645,7 @@ header {
 }
 #main {
   padding-top: 100px;
+  padding-bottom: 40px;
   .main_screen {
     .main_inner {
       padding: 0 5vw;
@@ -663,6 +665,28 @@ header {
           font-size: 52px;
           line-height: 58px;
         }
+      }
+    }
+  }
+}
+#skill {
+  .inner {
+    padding-top: 50px;
+    .contents {
+      gap: 20px;
+      margin-top: 40px;
+      .item {
+        min-height: 200px;
+        height: auto;
+        padding: 35px 32px 30px;
+        .explanation {
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
+      .item:last-child {
+        width: 348px;
+        padding: 35px 32px 30px;
       }
     }
   }
