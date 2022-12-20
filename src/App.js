@@ -25,7 +25,15 @@ const settings = {
   focusOnSelect : true,
   centerMode : true,
   slidesToShow: 5,
-  slidesToScroll: 1
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint : 480,
+      settings : {
+        slidesToShow : 2
+      }
+    }
+  ]
 };
 
 // function App() {
